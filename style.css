@@ -1,0 +1,8 @@
+@font-face{
+  font-family: 'Norse-Bold';
+  src: url('fonts/Norse-Bold.otf');
+}
+:root{
+  --padding-top:250px;
+  --padding-left:40px;
+}
