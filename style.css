@@ -33,8 +33,7 @@ html,body {
 }
 .sidebar {
   width: 33.33%;
-  height: 100vh;
-  background: url('images and logo/halie-west-25xggax4bSA-unsplash.jpg') no-repeat center center;
+  background: url('images and logo/halie-west-25xggax4bSA-unsplash.jpg') repeat-y center center;
   background-size: cover;
   text-align: center;
   display: flex;
@@ -45,11 +44,14 @@ html,body {
 .content{
   flex: 1;
   height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 .logo{
   width: 150px;
   height: 200px;
   margin: 5px 0;
+  
 }
 .title{
   font-size: 4rem;
@@ -73,7 +75,7 @@ html,body {
   font-size: calc(1rem + 0.5vw);
 }
 .sec1{
-  background: #c8cccc;
+  background: #fcf5f5;
   padding-top: var(--padding-top);
   padding-left: var(--padding-left);
   padding-bottom: var(--padding-bottom);
@@ -87,6 +89,10 @@ html,body {
   background: #fff;
   padding-left: var(--padding-left);
   padding-right: 100px;
+  padding-top: 50px;
+  padding-bottom: var(--padding-bottom);
+  box-shadow: 0 3px 5px  grey;
+  border-radius: 0 0 10px 10px;
 }
 .sign_up_form {
   display: flex;
@@ -95,10 +101,61 @@ html,body {
   gap: 50px;
 }
 .sign_up_form div {
-  margin-right: 250px;
+  margin-right: 150px;
 }
 .sign_up_form div input {
-  width: 500px;
-  height: 60px;
-  font-size: 30px;
+  width: 600px;
+  height: 70px;
+  font-size: 2rem;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  border: 1px solid grey;
+  border-radius: 6px;
+  padding: 5px;
+  margin-top: 10px;
+}
+.sec2 h2 {
+  font-size: 3rem;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  margin-top: 0;
+}
+
+.sign_up_form div input:invalid {
+  border: 1px solid red;
+}
+
+.sign_up_form div input:valid{
+  border: 1px solid green;
+}
+.sign_up_form div input:focus {
+  outline: none;
+  border: 1px solid blue
+}
+label {
+  font-size: calc(1rem + 1vh);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.sec3 {
+  padding-left: var(--padding-left);
+  padding-top: 50px;
+  height: 300px;
+}
+.sec3 button {
+  border: none;
+  padding: 15px 50px;
+  border-radius: 7px;
+  font-size: calc(1.2rem + 2vh);
+  color: #fcf5f5;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  background: darkgreen;
+  cursor: pointer;
+}
+.sec3 p , .sec3 a{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: calc(1.2rem + 2vh);
+}
+.sec3 a{
+  text-decoration: none;
+  color: darkgreen;
 }

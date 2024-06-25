@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <title>Sign-up form</title>
 </head>
+
 <body>
   <div class="container">
     <div class="sidebar">
@@ -19,7 +21,8 @@
     <div class="content">
       <section class="sec1">
         <p>
-          This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. <br>
+          This is not a real online service! You know you need something like this in your life to help you realize your
+          deepest dreams. <br>
           Sign up <em>now</em> to get started.
         </p>
         <p>
@@ -31,33 +34,37 @@
         <h2>Let's do this!</h2>
         <form action="#" method="post" class="sign_up_form" id="form">
           <div>
-            <label for="first_name">FIRST NAME</label><br>
-            <input type="text" name="user_name" id="first_name">
+            <label for="first_name">FIRST NAME <span>*</span></label><br>
+            <input type="text" name="user_name" id="first_name" required>
           </div>
           <div>
-            <label for="last_name">LAST NAME</label><br>
-            <input type="text" name="user_name" id="last_name">
+            <label for="last_name">LAST NAME <span>*</span></label><br>
+            <input type="text" name="user_name" id="last_name" required>
           </div>
           <div>
-            <label for="email">EMAIL</label><br>
-            <input type="email" name="user_email" id="email">
+            <label for="email">EMAIL <span>*</span></label><br>
+            <input type="email" name="user_email" id="email" required>
           </div>
           <div>
-            <label for="contact">PHONE NUMBER</label><br>
+            <label for="contact">PHONE NUMBER </label><br>
             <input type="tel" name="user_contact" id="contact">
           </div>
           <div>
-            <label for="password">PASSWORD</label><br>
-            <input type="password" name="user_password" id="password">
+            <label for="password">PASSWORD <span>*</span></label><br>
+            <input type="password" name="user_password" id="password" required>
           </div>
           <div>
-            <label for="cpassword">CONFIRM PASSWORD</label><br>
-            <input type="password" name="cuser_password" id="cpassword">
+            <label for="cpassword">CONFIRM PASSWORD <span>*</span></label><br>
+            <input type="password" name="cuser_password" id="cpassword" required>
           </div>
         </form>
       </section>
-      <section class="sec3"></section>
+      <section class="sec3">
+        <button type="submit" form="form">Create account</button>
+        <p>Already have an account? <a href="#">Log in</a></p>
+      </section>
     </div>
   </div>
 </body>
+
 </html>
